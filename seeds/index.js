@@ -39,6 +39,10 @@ const seedDB = async () => {
           filename: 'YelpCamp/jp9xst9uehkzfrub4zmp',
         },
       ],
+      geometry: {
+        type: 'Point',
+        coordinates: [-113.1331, 47.0202],
+      },
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem minima vero quis ab sed inventore quibusdam harum exercitationem, et repellendus nisi error, hic tenetur? Odit inventore velit voluptatem eos.',
       price,

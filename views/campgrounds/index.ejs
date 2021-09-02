@@ -1,18 +1,23 @@
 <% layout('layouts/boilerplate') %>
 <h1>All Campgrounds</h1>
-<div>
-  <a href="/campgrounds/new">Add New Campground</a>
-</div>
 <ul>
   <% for (let campground of campgrounds){%>
   <div class="card mb-3">
     <div class="row">
       <div class="col-md-4">
+        <% if (campground.images.length) {%>
         <img
           src="<%=campground.images[0].url %>"
           alt="<%=campground.title %> "
           class="img-fluid"
         />
+        <%} else {%>
+        <img
+          src="https://townsquare.media/site/366/files/2017/05/Adam-Yauch.jpg?w=980&q=75"
+          alt="yauch"
+          class="img-fluid"
+        />
+        <% } %>
       </div>
       <div class="col-md-8">
         <div class="card-body">
